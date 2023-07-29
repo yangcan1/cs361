@@ -16,3 +16,5 @@ Women: [Minutes working out] × [Bodyweight in kg] × 0.0637.<br> <br>
 ## RECEIVE data:
 After successfully running the program, the program will output an .csv file as your result of calories consumed. The output file will be located under the same directory.
 ## UML sequence diagram:
+![ezcv logo](https://github.com/yangcan1/cs361/blob/main/UML%20image.png)
+

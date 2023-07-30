@@ -13,8 +13,11 @@ Women: [Minutes working out] × [Bodyweight in kg] × 0.0637.<br> <br>
 
 
 **Example call:** `python3 microservice.py input.csv`<br>
-After running, the program will generate a output.txt which contains the data of extimated calories comsumming. 
+The .csv file contains the information of exercise and its information.<br>
+<img width="235" alt="image" src="https://github.com/yangcan1/cs361/assets/107888129/6e611fcd-eddd-4560-9105-c8b04874e15a">
+<br>After running, the program will generate a output.txt which contains the data of extimated calories comsumming. 
 <img width="450" alt="image" src="https://github.com/yangcan1/cs361/assets/107888129/0605d5e0-576b-48e3-8142-8f1df805bc0c">
+
 
 
 ## RECEIVE data:

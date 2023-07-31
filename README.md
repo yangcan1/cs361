@@ -1,27 +1,35 @@
-# cs361
+# cs361 microservice for partner
 
-# communication contract
-Men: [Minutes working out] × [Bodyweight in kg] × 0.0713. <br>
-Women: [Minutes working out] × [Bodyweight in kg] × 0.0637.<br> <br>
-.csv file contains the exercise data including total duration, body weight and your sex. The program can help you to calculate the correct calories consuming during the workout based on your sex and your weight. After running the program, the program will output an .csv file which contains the calories you consumed.
+This program is to filter car brand and car tires by first letter.
+For Example input in csv files :
+T
+H<br>
+<img width="220" alt="image" src="https://github.com/yangcan1/cs361/assets/107888129/2f9e10a6-d57b-4211-a87a-bc52828aaadb">
 
-
-## REQUEST data:
-1. Create an .csv file which contains your sex(1 for male, 2 for female), exercise duration(in minutes), and your bodyweight (in kg).
-2. Program running.
-3. Output an .csv file which contains the result of your calories consumed.
-
-
-**Example call:** `python3 microservice.py input.csv`<br>
-The .csv file contains the information of exercise and its information.<br>
-<img width="235" alt="image" src="https://github.com/yangcan1/cs361/assets/107888129/6e611fcd-eddd-4560-9105-c8b04874e15a">
-<br>After running, the program will generate a output.txt which contains the data of extimated calories comsumming. 
-<img width="450" alt="image" src="https://github.com/yangcan1/cs361/assets/107888129/0605d5e0-576b-48e3-8142-8f1df805bc0c">
+=> Result will shown 
+Brands starting with letter 'T': ['Toyota']
+Tires starting with letter 'T': ['Toyo Tires']
+Brands starting with letter 'H': ['Honda']
+Tires starting with letter 'H': ['Hankook']<br>
+<img width="502" alt="image" src="https://github.com/yangcan1/cs361/assets/107888129/9069455b-4a4a-403c-9919-d65167952de0">
 
 
+<=> The CSV files only take input as one letter each line, do not have to be capitalized
 
-## RECEIVE data:
-After successfully running the program, the program will output an .csv file as your result of calories consumed. The output file will be located under the same directory.
+## Communication Contract
+1. How to request data
+Create a csv files with [nameyouwanted.csv] that places in the same directories with the filter program
+enter any letter but only one letter each line
+run the program -> python3 main.py [nameyouwanted.csv]
+
+2. How to receive data
+If request data are success, the result will out put as output.txt files
+It will be placed same directories with the program.
+
 ## UML sequence diagram:
-![ezcv logo](https://github.com/yangcan1/cs361/blob/main/UML%20image.png)
+
+![image](https://github.com/yangcan1/cs361/assets/107888129/c64a9a2e-6a35-40d5-870e-515aa625cef4)
+
+
+
 

@@ -28,8 +28,7 @@ It will be placed same directories with the program.
 
 ## UML sequence diagram:
 
-![image](https://github.com/yangcan1/cs361/assets/107888129/c64a9a2e-6a35-40d5-870e-515aa625cef4)
-
+![image](https://github.com/yangcan1/cs361/assets/107888129/b9043fcb-1dde-4544-a9e8-039f517c35f5)
 
 
 

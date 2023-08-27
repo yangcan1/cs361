@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>My page</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<style>
+.feature-image{
+    height: 150;
+    width: 150;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+
+div {
+    width: max-content;
+    text-align: left;
+
+}
+.homepage {
+    position: middle;
+}
+.image {
+    height: 100;
+    width: 100;
+}
+.picture {
+    height:200;
+    width: 200;
+}
+.explain {
+    word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
+    color:red;
+}
+</style>
+
+</head>
+
+<body>
+    <section class="nav-bar">
+        <nav>
+            <div>
+                <a class="goback" href="index.html"> 
+                    <img class="gobacklogo image" src="./pic/Goback.png" >
+                </a>
+                <a class="mepage" href="ME.html">
+                    <img class="melogo image" src="./pic/me.jpeg">
+                </a>
+            </div>
+            
+            
+        </nav>
+    </section>
+    <p>&nbsp;</p>
+
+    <section class="content">
+        <div class="id-info">
+            <div class="profile-pic">
+                <img class="selfie image" style="border-radius: 50%;" src="./pic/selfie.JPG">
+            </div>
+            <div class="name">
+                <B>ID: </B>9312xx13<br>
+                <B>NAME: </B>Can Yang
+            </div>
+        </div>
+
+        <div class="Features">
+            <a class="feature" href="">
+                <img class="feature-image"  src="./pic/history.png" alt="history">
+            </a>
+            <a class="feature" href="">
+                <img class="feature-image" src="./pic/favorite.jpeg" alt="favorite">
+            </a>
+            <a class="feature" href="">
+                <img class="feature-image" src="./pic/post.jpeg" alt="my exercise">
+            </a>
+            <a class="feature" href="addPost.html">
+                <img class="feature-image" src="./pic/add.png" alt="add exercise">
+            </a>
+
+        </div>
+        
+    </section>
+    <p>&nbsp;</p>
+
+    <section class="bottom">
+        <div>
+            <a class="homepage" href="index.html">
+                <img class="homelogo image" src="./pic/home.jpeg">
+            </a>
+            <a class="mepage" href="ME.html">
+                <img class="melogo image" src="./pic/me.jpeg">
+            </a>
+        </div>
+    </section>
+    
+
+
+</body>
+<script>
+// window.addEventListener("popstate", (event) => {
+//   alert(
+//     `location: ${document.location}, state: ${JSON.stringify(event.state)}`,
+//   );
+// });
+
+// history.pushState({ page: 1 }, "title 1", "?page=1");
+// history.pushState({ page: 2 }, "title 2", "?page=2");
+// history.replaceState({ page: 3 }, "title 3", "?page=3");
+// history.back(); // alerts "location: http://example.com/example.html?page=1, state: {"page":1}"
+// history.back(); // alerts "location: http://example.com/example.html, state: null"
+// history.go(2); // alerts "location: http://example.com/example.html?page=3, state: {"page":3}"
+
+</script>
+</html>

@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Trainning</title>
+<script src="./index.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+<style>
+
+.nav-bar {
+    display: flex;
+}
+.comment {
+    border: solid;
+}
+
+div {
+    width: max-content;
+    text-align: left;
+
+}
+.homepage {
+    position: middle;
+}
+.image {
+    height: 100;
+    width: 100;
+}
+
+.exercise-div {
+    border: solid;
+}
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+</style>
+</head>
+
+<body>
+    <section class="nav-bar">
+        <nav>
+            <div>
+                <a class="goback" onclick="history.back()"> 
+                    <img class="gobacklogo image" src="./pic/Goback.png" >
+                </a>
+                <a class="homepage" href="index.html">
+                    <img class="homelogo image" src="./pic/home.jpeg">
+                </a>
+                
+            </div>
+            <div class="search-container">
+                <form >
+                    <input type="text" id="search-content" onkeyup="filtering()"  placeholder="Search for names..." name="search-info">
+
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            
+        </nav>
+    </section>
+
+    <section class="content">
+        <ul id="myUL">
+            <li><a href="./pages/benchPress.html">Bench Press</a></li>
+            <li><a href="./pages/legPress.html">Leg Press</a></li>
+          
+            <li><a href="./pages/shoulderPress.html">Shoulder Press</a></li>
+            <li><a href="./pages/squats.html">Squats</a></li>
+          
+            <li><a href="./pages/Row.html">Row</a></li>
+            <li><a href="./pages/deadlift.html">Deadlift</a></li>
+            <li><a href="./pages/hammerCurl.html">Hammer Curl</a></li>
+          </ul>
+        
+        
+    </section>
+    <p>&nbsp;</p>
+
+    <section class="comment">
+        <div>
+            <p>Comments:</p>
+            <p2>I like this post! it helps me a lot to build a complete trainning system.</p2>
+        </div>
+
+    </section>
+
+    
+    <br>
+
+    <p>&nbsp;</p>
+
+    <div id="insert" style="display: block">
+        <form id="calories" method="POST" action="/calories">
+            <legend><strong>Calculate your calories consumed</strong></legend>
+                <fieldset class="fields">
+                <label> sex (0 for male, 1 for female)</label> <input type="number" name="sex" id="sex">
+                <label> duration (in minute)</label> <input type="number" name="duration" id="duration">
+                <label> weight (in kg) </label> <input type="number" name="weight" id="weight">
+                </fieldset>
+
+            <input class="btn" type="submit" onclick="handleSubmit()">
+        </form> 
+    </div>
+    <p>&nbsp;</p>
+
+    <section class="bottom">
+        <div>
+            <a class="homepage" href="index.html">
+                <img class="homelogo image" src="./pic/home.jpeg">
+            </a>
+            <a class="mepage" href="ME.html">
+                <img class="melogo image" src="./pic/me.jpeg">
+            </a>
+        </div>
+    </section>
+
+
+</body>
+<script>
+    function filtering() {
+        var searchContent, filter, ul, li, a, i, txtValue;
+        searchContent = document.getElementById("search-content");
+        filter = searchContent.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+</html>
